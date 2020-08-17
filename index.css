@@ -393,7 +393,7 @@ h3 {
 
 .article-bottom-middle1 {
     flex: auto;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     margin-top: 2rem;
 }
 
@@ -412,7 +412,7 @@ h3 {
 
 .article-bottom-middle2 {
     flex: auto;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-top: 2rem;
 }
 
