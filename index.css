@@ -143,7 +143,8 @@ body {
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
-        background-color: #EA6A23;
+        background-color: white;
+        border-radius: 0.25rem;
     }
 
     .navbar-links ul li {
@@ -162,12 +163,15 @@ body {
     .navbar-links .nav-ticket {
         display: flex;
         justify-content: center;
-        margin: 0 auto;
     }
 
     .navbar-links span {
-        margin-left: 2rem;
+        margin: 0 auto;
+        margin-top: 7.1rem;
+        margin-left: 0.45rem;
     }
+
+    .
 }
 
 .box1 {
@@ -480,6 +484,15 @@ footer {
         display: none;
     }
     
+    .box3 {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    .div-daftar {
+        padding-bottom: 2rem;
+    }
+
     .article-bottom {
         display: flex;
         align-items: center;
@@ -496,40 +509,44 @@ footer {
     
     .article-bottom-middle1 {
         margin: 0 auto;
-        margin-top: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
     }
     
     .article-bottom-middle1 img {
         width: 2rem;
         height: 2rem;
+        margin-top: -0.5rem;
     }
 
     .article-bottom-middle2 {
-        margin: 0 auto;
+        margin-top: -1rem;
     }
     
-    .article-bottom-call {
+    .article-bottom-middle2 img {
         width: 1rem;
         height: 1rem;
-        padding-top: 0.5rem;
-        margin-left: 4rem;
+        margin-top: 0.75rem;
+        margin-left: 1rem;
     }
 
-    .article-bottom-cc24 {
-        margin-left: -1rem;
+    .article-bottom-cc {
+        margin-left: -0.5rem;
     }
     
     .article-bottom-right {
         margin: 0 auto;
-        margin: 2rem 0;
+        margin-top: 1rem;
     }
     
     footer {
         text-align: center;
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .logo-kemenkeu {
         margin: 0 auto;
+        width: 2rem;
+        height: 2rem;
     }
 }
