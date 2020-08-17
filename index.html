@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://hai.kemenkeu.go.id/file.php/19411CQSBTWPGDK194100809EE605/5f36c655471ea_FAVICON-06.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Login | Layanan Informasi dan Bantuan LPDP</title>
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <nav class="navbar container container-nav">
+          <div class="brand-title"><img src="ASET-18.png" alt="logo-lpdp"></div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <div class="background-color">
+                <li><a href="#">Beranda</a></li>
+              </div>
+              <div class="background-color">
+                <li><a href="#">Semua Artikel</a></li>
+              </div>
+              <li class="nav-logo"><a class="nav-ticket" href="#"><img class="logo-ticket" src="ASET-19.png"><span>Buat Tiket</span></a></li>
+              <div class="background-color">
+                <li><a href="#">Daftar</a></li>
+              </div>
+              <div class="background-color">
+                <li><a class="active" href="#">Login</a></li>
+              </div>
+            </ul>
+          </div>
+      </nav>
+    </header>
+    <div class="box1 container">
+      <div class="box2">
+        <div class="box3">
+          <h3>Masuk ke Akunmu</h3>
+          <form class="form1">
+            <div class="div-email">
+              <label for="username">Alamat Email</label>
+              <input id="username" type="text" placeholder="abigail.cantika@gmail.com"/>
+            </div>
+            <div class="div-sandi">
+              <label for="password">Sandi</label>
+              <input id="password" type="password" placeholder="6+ Karakter"/>
+            </div>
+            <div class="div-masuk">
+              <a href="#">
+                <button type="button">Masuk</button>
+              </a>
+            </div>
+            <div class="div-lupa">
+              <a href="#">Lupa kata sandi?</a>
+            </div>
+            <div class="div-daftar">
+              <a href="#">Belum memiliki akun?</a>
+              </div>
+          </form>
+        </div>
+        <div class="gambar">
+          <img src="ASET-21.png" alt="main-login">
+        </div>
+      </div>
+    </div>
+    <div class="container container-bottom">
+      <div class="article-bottom">
+        <div class="article-bottom-left">
+          <img class="article-bottom-logo" src="ASET-22.png">
+          <h4 class="article-bottom-unit">
+            Lembaga Pengelola Dana Pendidikan </br>
+            Kementerian Keuangan RI
+          </h4>
+          <p class="article-bottom-address">
+            Gedung Danadyaksa Cikini </br>
+            Jalan Cikini Raya No.91A-D, </br>
+            Jakarta Pusat 10330
+          </p>
+        </div>
+    
+        <div class="article-bottom-middle1">
+          <a href="{{ path('portal_login') }}" class="article-bottom-ticket1">
+            <img src="ASET-23.png" class="article-bottom_ticket2">
+              <div class="article-bottom-ticket3">
+                <h4>Buat Tiket</h4>
+              </div>
+          </a>
+        </div>
+
+        <div class="article-bottom-middle2">
+          <div class="article-bottom-hours">
+            <img src="ASET-24.png" class="article-bottom-call">
+              <div class="article-bottom-cc">
+                <h4>1500652</h4>
+                  <p class="article-bottom-cc24">
+                    Layanan Call Center </br>
+                    24 Jam
+                  </p>
+              </div>
+          </div>
+        </div>
+          
+        <div class="article-bottom-right">
+          <a href="https://instagram.com/lpdp_ri?igshid=hbuipp9qwtyk"><img src="ASET-25.png" class="article-bottom-ig"></a>
+          <a href="https://twitter.com/LPDP_RI?s=21"><img src="ASET-26.png" class="article-bottom-tw"></a>
+          <a href="https://www.facebook.com/LPDPKemenkeu/"><img src="ASET-27.png" class="article-bottom-fb"></a>
+          <a href="https://www.youtube.com/channel/UCLWpsuqDrJ19mTZVLA_ot0w"><img src="ASET-28.png" class="article-bottom-yt"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-main">
+      <img class="logo-kemenkeu" src="https://hai.kemenkeu.go.id/file.php/19040THAYMHTDHW19039519EE3FCF/5f31458f82fad_ASET-23.png" alt="logo-kemenkeu">
+        <div class="footer-copyright">
+          Hak Cipta Kementerian Keuangan Republik Indonesia | 
+          <a href="#">Peta Situs</a> | 
+          <a href="{{ path('portal_new_ticket') }}">Email Kemenkeu</a> |
+          <a href="{{ path('portal_kb') }}">FAQ</a> | 
+          <a href="#">Prasyarat</a> </br>
+            Hubungi Kami | Manajemen Portal Kemenkeu - Gedung Djuanda I Lt. 9 Jl. Dr. Wahidin Raya Nomor 1 Jakarta 10710
+        </div>
+    </div>
+  </footer>
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+    })
+  </script>
+</body>
+</html>
