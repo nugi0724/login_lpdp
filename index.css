@@ -125,7 +125,7 @@ body {
     color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 675px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -355,7 +355,7 @@ h3 {
     color: #2c5282;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 675px) {
     .box2 {
         width: 75%;
     }
@@ -480,7 +480,7 @@ footer {
     padding-left: 0.5rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 675px) {
     .article-bottom {
         display: flex;
         align-items: center;
